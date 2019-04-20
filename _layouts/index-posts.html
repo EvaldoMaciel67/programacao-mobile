@@ -14,7 +14,7 @@ layout: default
         {% for post in site.posts reversed %}
         <tr>    
             <td><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
-            <td>{{post.descr}}{{site.baseurl}}</td>
+            <td>{{post.descr}}</td>
             <td>{{post.date | date: "%d/%m/%y"}}</td>
         </tr>
     {% endfor %}
