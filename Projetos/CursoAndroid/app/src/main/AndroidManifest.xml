@@ -17,14 +17,17 @@
         <activity android:name=".MainActivity">
         </activity>
 
-        <activity android:name=".activities.BotoesActivity">
+        <activity android:name=".activities.BotoesActivity"
+            android:parentActivityName=".activities.ToolbarActivity">
+        </activity>
+
+        <activity android:name=".activities.ToolbarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
 
         <activity android:name=".activities.LoginActivity">
         </activity>
