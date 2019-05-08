@@ -16,6 +16,7 @@
     <dimen name="spacing_smaller">4dp</dimen>
     <dimen name="spacing_tiny">2dp</dimen>
 
+    <dimen name="app_bar_height">250dp</dimen>
 
 
 </resources>

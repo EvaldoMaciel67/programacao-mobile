@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import br.com.koruthos.cursoandroid.R;
@@ -32,6 +34,38 @@ public class ToolbarActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }
 
+        // Cadastra evento no botao para disparar a snackbar
+        mBinding.toolbarBtnSnack.setOnClickListener(v -> {
+            Snackbar.make(v, "Snack Bar!", Snackbar.LENGTH_INDEFINITE)
+                    .setAction("done", null)
+                    .show();
+        });
+
+        // Adiciona os eventos na bottom navigation
+        mBinding.toolbarBottomnavigation.setOnNavigationItemSelectedListener(menuItem -> onBottomNavigationClick(menuItem));
+
+
+    }
+
+    private boolean onBottomNavigationClick(final MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_tela1:
+                mBinding.toolbarTxtFoi.setText("TELA 1");
+                return true;
+            case R.id.action_tela2:
+                mBinding.toolbarTxtFoi.setText("TELA 2");
+                return true;
+            case R.id.action_tela3:
+                mBinding.toolbarTxtFoi.setText("TELA 3");
+                return true;
+            case R.id.action_tela4:
+                mBinding.toolbarTxtFoi.setText("TELA 4");
+                Snackbar.make(mBinding.toolbarBottomnavigation, "Tela4!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("done", null)
+                        .show();
+                return true;
+        }
+        return false;
     }
 
     /**
