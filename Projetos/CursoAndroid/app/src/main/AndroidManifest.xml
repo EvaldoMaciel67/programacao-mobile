@@ -21,15 +21,25 @@
             android:parentActivityName=".activities.ToolbarActivity">
         </activity>
 
+        <activity android:name=".activities.TrocaActivity">
+
+        </activity>
+        <activity android:name=".activities.PersistenciaActivity">
+
+        </activity>
+
         <activity android:name=".activities.ToolbarActivity">
+        </activity>
+
+        <activity android:name=".activities.LoginActivity">
+        </activity>
+
+        <activity android:name=".activities.ViewPagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <activity android:name=".activities.LoginActivity">
         </activity>
 
     </application>
