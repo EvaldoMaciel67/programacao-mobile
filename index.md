@@ -4,19 +4,19 @@ layout: page
 
 # 📚 Apresentação
 
-Página da disciplina de Desenvolvimento para Dispositivos Móveis 2019-1.
+Página da disciplina de Desenvolvimento para Dispositivos Móveis 2019-2.
 
 # 📕 Avaliações 
 
 ## Provas
 
-- 1o. bimestre: 15/04/19 
-- 2o. bimestre: 11/06/19
-- Segunda chamada: 24/06/19
-- Exame final: 01/07/19
+- 1o. bimestre: 23/09/19
+- 2o. bimestre: 27/11/19
+- Segunda chamada: 02/12/19
+- Exame final: 09/12/19
 
 ## Trabalhos
 
-- 1o. bimestre: 16/04/19
-- 2o. bimestre: 18/06/19
+- 1o. bimestre: 23/09/19
+- 2o. bimestre: 25/11/19
 
