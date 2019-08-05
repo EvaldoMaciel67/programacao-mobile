@@ -6,6 +6,8 @@ layout: page
 
 Página da disciplina de Desenvolvimento para Dispositivos Móveis 2019-2.
 
+- [Apresentação da disciplina](https://github.com/chaua/programacao-mobile/blob/master/Aulas/Aula00%20-%20Apresenta%C3%A7%C3%A3o%20da%20disciplina.pdf)
+
 # 📕 Avaliações 
 
 ## Provas
