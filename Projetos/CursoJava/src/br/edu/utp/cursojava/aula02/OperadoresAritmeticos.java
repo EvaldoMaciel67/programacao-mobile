@@ -1,4 +1,4 @@
-package br.edu.utp.cursojava;
+package br.edu.utp.cursojava.aula02;
 
 // import: funciona de maneira análoga ao #include do C e C++
 import java.util.Scanner;

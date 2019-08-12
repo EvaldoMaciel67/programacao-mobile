@@ -1,4 +1,4 @@
-package br.edu.utp.cursojava;
+package br.edu.utp.cursojava.aula02;
 
 import java.math.BigDecimal;
 import java.util.Scanner;

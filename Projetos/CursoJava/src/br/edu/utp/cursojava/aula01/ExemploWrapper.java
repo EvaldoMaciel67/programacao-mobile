@@ -1,4 +1,4 @@
-package br.edu.utp.cursojava;
+package br.edu.utp.cursojava.aula01;
 
 public class ExemploWrapper {
 

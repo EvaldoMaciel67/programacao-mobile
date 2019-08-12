@@ -1,4 +1,4 @@
-package br.edu.utp.cursojava;
+package br.edu.utp.cursojava.aula02;
 
 public class OperadoresAtribuicao {
 
