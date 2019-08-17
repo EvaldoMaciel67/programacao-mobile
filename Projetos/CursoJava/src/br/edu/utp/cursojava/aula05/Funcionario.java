@@ -8,7 +8,7 @@ package br.edu.utp.cursojava.aula05;
 // Usada quando a classe pai serve apenas como uma generalização
 // de outras classes filhas - atributos e métodos em comum
 
-public abstract class Funcionario {
+public class Funcionario {
 
     private String nome;
     private int matricula;
@@ -45,7 +45,9 @@ public abstract class Funcionario {
                 && this.nome.equals(outro.nome);
     }
 
-    public abstract void aplicarAumento();
+    public void aplicarAumento() {
+        // nada
+    }
 
 
 
