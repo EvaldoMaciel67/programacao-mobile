@@ -19,5 +19,5 @@ Página da disciplina de Desenvolvimento para Dispositivos Móveis 2019-2.
 
 ## Trabalhos
 
-- `1o. bimestre...: 23/09 | `  [`Trabalho 1 e 2`]()
-- `2o. bimestre...: 25/11 | `  [`Trabalho 3`]()
+- `1o. bimestre...: 23/09 | `  `Trabalho 1 e 2`
+- `2o. bimestre...: 25/11 | `  `Trabalho 3`
