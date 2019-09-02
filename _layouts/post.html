@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-
 <br>
 <div class="card">
     <div class="card-image">
         {% if page.header %}
-        <img style="filter: brightness(50%);" height="150px" src="{{site.baseurl}}/assets/img/{{page.header}}">
+        <!--div style="background: {{page.color_secondary}}"-->
+        <!--img style="filter: brightness(50%);" height="150px" src="{{site.baseurl}}/assets/img/{{page.header}}"-->
         {% else %}
-        <img style="filter: brightness(50%);" height="150px" src="{{site.baseurl}}/assets/img/header.jpg">
+        <!--img style="filter: brightness(50%);" height="150px" src="{{site.baseurl}}/assets/img/{{page.header}}"-->
+        <!--div style="background: teal darken-4" height="185px"-->
         {% endif %}
-        <span class="card-title">{{page.title}}</span>
+        <!--span class="card-title">{{page.title}}</span-->
     </div>    
     <div class="card-content">
         {{content}}
