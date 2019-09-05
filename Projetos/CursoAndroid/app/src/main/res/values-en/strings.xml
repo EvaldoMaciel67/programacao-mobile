@@ -1,8 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CursoAndroid</string>
-    <string name="alo_mamae">Alô, mamãe!</string>
-
-    <string name="btn_linear_layout_h">LinearLayout - Horizontal</string>
+    <string name="alo_mamae">Hello, moms!</string>
     <string name="btn_frame_layout">FrameLayout</string>
-
 </resources>
