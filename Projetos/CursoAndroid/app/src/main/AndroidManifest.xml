@@ -21,6 +21,9 @@
 
         <activity android:name=".activities.LayoutLinearActivity"/>
 
+        <activity android:name=".activities.LayoutFrameActivity"/>
+
+        <activity android:name=".activities.VisibilidadeActivity"/>
 
     </application>
 

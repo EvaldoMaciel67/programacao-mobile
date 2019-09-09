@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. DECLARAÇÃO DAS VARIÁVEIS -->
+    <data/>
+
+    <!-- 2. DEFINIÇÃO DO LAYOUT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/visibilidade_txt_mensagem1"
+                android:text="Não procure ser o melhor, mas sim o mais simples. Porque até a maior árvore da floresta começa do chão."
+                android:layout_margin="@dimen/spacing_normal"
+                android:textColor="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/visibilidade_txt_mensagem2"
+                android:text="Não adianta encher de perfume se o que falta é a essência."
+                android:layout_margin="@dimen/spacing_normal"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/visibilidade_txt_mensagem3"
+                android:text="Não faça da sua vida um rascunho, poderá não ter tempo de passá-la a limpo."
+                android:layout_margin="@dimen/spacing_normal"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/visibilidade_btn_exibir_todos"
+                android:text="Exibir todos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/visibilidade_btn_esconder2"
+                android:text="Invisible - segundo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/visibilidade_btn_eliminar2"
+                android:text="Gone - segundo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/visibilidade_btn_exibir2"
+                android:text="Visible - segundo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</layout>
+
+
+

@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Cadastra os eventos nos botoes
         mBinding.mainBtnLinearHorizontal.setOnClickListener(v -> exibirActivityLinear());
+        mBinding.mainBtnFrame.setOnClickListener(v -> exibirActivityFrame());
+        mBinding.mainBtnVisibilidade.setOnClickListener(v -> exibirVisibilidadeActivity());
+        mBinding.mainBtnSair.setOnClickListener(v -> finish());
 
         // --- MODO TRADICIONAL ----
         // Define o layout da activity
@@ -98,9 +101,23 @@ public class MainActivity extends AppCompatActivity {
         // Intenções são usadas para invocar alguma outra activity
         Intent it = new Intent(this, LayoutLinearActivity.class);
         startActivity(it);
-
     }
 
+
+    private void exibirActivityFrame() {
+        Log.d(TAG, "exibirActivityFrame: ");
+        // Intenções são usadas para invocar alguma outra activity
+        Intent it = new Intent(this, LayoutFrameActivity.class);
+        startActivity(it);
+    }
+
+
+    private void exibirVisibilidadeActivity() {
+        Log.d(TAG, "exibirVisibilidadeActivity: ");
+        // Intenções são usadas para invocar alguma outra activity
+        Intent it = new Intent(this, VisibilidadeActivity.class);
+        startActivity(it);
+    }
 
 
 

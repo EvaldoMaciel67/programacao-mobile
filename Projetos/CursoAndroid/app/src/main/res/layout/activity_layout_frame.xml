@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. DECLARAÇÃO DAS VARIÁVEIS -->
+    <data/>
+
+    <!-- 2. DEFINIÇÃO DO LAYOUT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:foregroundTint="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus sagittis condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam hendrerit fermentum nulla, eu rutrum dui convallis at. Aliquam erat volutpat. Quisque pharetra malesuada arcu sed porttitor. Proin egestas bibendum tincidunt. Aliquam erat volutpat. Nullam consectetur, dolor vel tincidunt fermentum, odio metus pellentesque elit, sit amet tristique ipsum velit et orci. Nam rutrum convallis ultrices.\n Cras maximus nibh diam, sit amet condimentum justo bibendum eget. Etiam sed molestie libero, ac fermentum ex. Maecenas eleifend tristique tincidunt. Quisque fermentum odio sit amet sollicitudin efficitur. Nunc porta efficitur purus, eget scelerisque nulla imperdiet eu. Sed aliquam purus sed pellentesque maximus. Morbi porta tempor venenatis. Integer sem mi, luctus at lectus ac, convallis bibendum nisi. Donec vel interdum nunc, condimentum interdum ligula."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="OK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="OK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus sagittis condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam hendrerit fermentum nulla, eu rutrum dui convallis at. Aliquam erat volutpat. Quisque pharetra malesuada arcu sed porttitor. Proin egestas bibendum tincidunt. Aliquam erat volutpat. Nullam consectetur, dolor vel tincidunt fermentum, odio metus pellentesque elit, sit amet tristique ipsum velit et orci. Nam rutrum convallis ultrices.\n Cras maximus nibh diam, sit amet condimentum justo bibendum eget. Etiam sed molestie libero, ac fermentum ex. Maecenas eleifend tristique tincidunt. Quisque fermentum odio sit amet sollicitudin efficitur. Nunc porta efficitur purus, eget scelerisque nulla imperdiet eu. Sed aliquam purus sed pellentesque maximus. Morbi porta tempor venenatis. Integer sem mi, luctus at lectus ac, convallis bibendum nisi. Donec vel interdum nunc, condimentum interdum ligula."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                    android:foregroundTint="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</layout>
+
+
+

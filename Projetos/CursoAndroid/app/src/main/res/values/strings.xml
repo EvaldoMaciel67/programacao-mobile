@@ -4,5 +4,7 @@
 
     <string name="btn_linear_layout_h">LinearLayout - Horizontal</string>
     <string name="btn_frame_layout">FrameLayout</string>
+    <string name="btn_sair">Sair</string>
+    <string name="exemplo_visibilidade">Exemplo visibilidade</string>
 
 </resources>

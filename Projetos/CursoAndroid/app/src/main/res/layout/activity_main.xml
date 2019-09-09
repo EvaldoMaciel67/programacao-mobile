@@ -6,41 +6,64 @@
     <data/>
 
     <!-- 2. DEFINIÇÃO DO LAYOUT -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/main_txt_hello"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/spacing_normal"
-            android:background="@color/fundo"
-            android:padding="@dimen/spacing_normal"
-            android:text="Hello World!"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/font_grande"
-            android:textStyle="bold"/>
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/main_btn_linear_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:text="@string/btn_linear_layout_h"
-            android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/main_txt_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_normal"
+                android:background="@color/fundo"
+                android:padding="@dimen/spacing_normal"
+                android:text="Hello World!"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_grande"
+                android:textStyle="bold"/>
 
-        <Button
-            android:id="@+id/main_btn_frame"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/btn_frame_layout"
-            android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/main_btn_linear_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/btn_linear_layout_h"
+                android:textColor="@android:color/white"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/main_btn_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/btn_frame_layout"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/main_btn_visibilidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/exemplo_visibilidade"
+                android:textColor="@android:color/white"/>
+
+
+            <Button
+                android:id="@+id/main_btn_sair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/btn_sair"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </layout>
