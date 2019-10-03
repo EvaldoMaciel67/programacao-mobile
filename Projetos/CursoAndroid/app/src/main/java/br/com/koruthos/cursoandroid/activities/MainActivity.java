@@ -3,6 +3,18 @@ package br.com.koruthos.cursoandroid.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -49,6 +61,61 @@ public class MainActivity extends AppCompatActivity {
         //TextView hello = findViewById(R.id.hello);
         //hello.setText("Alô, mamãe!");
         // --- FIM MODO TRADICIONAL ----
+
+        // Cadastra a toolbar na activity
+        setSupportActionBar(mBinding.toolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(R.string.app_name);
+        }
+
+
+        // Criação dos itens da navigation drawer
+        PrimaryDrawerItem item1 = new PrimaryDrawerItem()
+                .withIdentifier(1)
+                .withName("Item 1");
+
+        PrimaryDrawerItem item2 = new PrimaryDrawerItem()
+                .withIdentifier(2)
+                .withName("Item 2");
+
+        SecondaryDrawerItem item3 = new SecondaryDrawerItem()
+                .withIdentifier(3)
+                .withName("Item 3");
+
+        // Criação do header
+        final AccountHeader header = new AccountHeaderBuilder()
+                .withActivity(this)
+                .withHeaderBackground(R.drawable.ic_launcher_background)
+                .addProfiles(
+                        new ProfileDrawerItem()
+                                .withName("Fred Flintstones")
+                                .withEmail("flintstons@email.com")
+                                .withIcon(getResources().getDrawable(R.drawable.ic_launcher_background))
+                )
+                .build();
+
+        // Configura a navigation drawer
+        Drawer builder = new DrawerBuilder()
+                .withActivity(this)
+                .withToolbar(mBinding.toolbar)
+                .withAccountHeader(header)
+                .addDrawerItems(
+                        item1,
+                        item2,
+                        new DividerDrawerItem(),
+                        item3
+                )
+                .withOnDrawerItemClickListener((view, position, drawerItem) -> {
+                    Toast.makeText(this, drawerItem.toString(), Toast.LENGTH_SHORT).show();
+                    return true;
+                })
+                .build();
+
+
+
+
+
 
         // Tipos de log
         Log.v(TAG, "onCreate: VERBOSE");
@@ -119,6 +186,26 @@ public class MainActivity extends AppCompatActivity {
         startActivity(it);
     }
 
+    /**
+     * Sobrescrever este metodo para definir qual sera o layout a ser carregado
+     * na toolbar
+     *
+     * @param menu
+     * @return
+     */
+    @Override
+    public boolean onCreateOptionsMenu(final Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return true;
+    }
 
-
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_salvar:
+                Toast.makeText(this, "Salvando alguma coisa", Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

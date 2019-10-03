@@ -1,69 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- 1. DECLARAÇÃO DAS VARIÁVEIS -->
     <data/>
 
     <!-- 2. DEFINIÇÃO DO LAYOUT -->
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/main_txt_hello"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:weightSum="1"
+                android:text="@string/app_name"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_layout">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/spacing_normal"
-                android:background="@color/fundo"
-                android:padding="@dimen/spacing_normal"
-                android:text="Hello World!"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/font_grande"
-                android:textStyle="bold"/>
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/main_btn_linear_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorAccent"
-                android:text="@string/btn_linear_layout_h"
-                android:textColor="@android:color/white"/>
-
-            <Button
-                android:id="@+id/main_btn_frame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimary"
-                android:text="@string/btn_frame_layout"
-                android:textColor="@android:color/white"/>
-
-            <Button
-                android:id="@+id/main_btn_visibilidade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimary"
-                android:text="@string/exemplo_visibilidade"
-                android:textColor="@android:color/white"/>
+                <TextView
+                    android:id="@+id/main_txt_hello"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:background="@color/fundo"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="Hello World!"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_grande"
+                    android:textStyle="bold"/>
 
 
-            <Button
-                android:id="@+id/main_btn_sair"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimaryDark"
-                android:text="@string/btn_sair"
-                android:textColor="@android:color/white"/>
+                <TextView
+                    style="@style/Titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus sagittis condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam hendrerit fermentum nulla, eu rutrum dui convallis at. Aliquam erat volutpat. Quisque pharetra malesuada arcu sed porttitor. Proin egestas bibendum tincidunt. Aliquam erat volutpat. Nullam consectetur, dolor vel tincidunt fermentum, odio metus pellentesque elit, sit amet tristique ipsum velit et orci. Nam rutrum convallis ultrices.\n Cras maximus nibh diam, sit amet condimentum justo bibendum eget. Etiam sed molestie libero, ac fermentum ex. Maecenas eleifend tristique tincidunt. Quisque fermentum odio sit amet sollicitudin efficitur. Nunc porta efficitur purus, eget scelerisque nulla imperdiet eu. Sed aliquam purus sed pellentesque maximus. Morbi porta tempor venenatis. Integer sem mi, luctus at lectus ac, convallis bibendum nisi. Donec vel interdum nunc, condimentum interdum ligula."/>
 
-        </LinearLayout>
+                <TextView
+                    style="@style/Texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus sagittis condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam hendrerit fermentum nulla, eu rutrum dui convallis at. Aliquam erat volutpat. Quisque pharetra malesuada arcu sed porttitor. Proin egestas bibendum tincidunt. Aliquam erat volutpat. Nullam consectetur, dolor vel tincidunt fermentum, odio metus pellentesque elit, sit amet tristique ipsum velit et orci. Nam rutrum convallis ultrices.\n Cras maximus nibh diam, sit amet condimentum justo bibendum eget. Etiam sed molestie libero, ac fermentum ex. Maecenas eleifend tristique tincidunt. Quisque fermentum odio sit amet sollicitudin efficitur. Nunc porta efficitur purus, eget scelerisque nulla imperdiet eu. Sed aliquam purus sed pellentesque maximus. Morbi porta tempor venenatis. Integer sem mi, luctus at lectus ac, convallis bibendum nisi. Donec vel interdum nunc, condimentum interdum ligula."/>
 
-    </ScrollView>
+                <Button
+                    android:id="@+id/main_btn_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/btn_linear_layout_h"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/main_btn_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/btn_frame_layout"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/main_btn_visibilidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/exemplo_visibilidade"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/main_btn_sair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="@string/btn_sair"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </layout>
